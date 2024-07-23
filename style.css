@@ -1,0 +1,93 @@
+body {
+  width: 100vw;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: tomato;
+  gap: 20px;
+}
+
+.pomodoro {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-top: 30px;
+  color: white;
+}
+
+.present-time {
+  font-size: 20px;
+  color: white;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer-hour,
+.timer-minute {
+  color: tomato;
+  background-color: white;
+  height: 120px;
+  width: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+.timer-div {
+  font-size: 30px;
+  margin: 0px 5px;
+  color: white;
+  font-weight: bolder;
+}
+
+.buttons {
+  display: flex;
+}
+.button {
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
+  background-color: white;
+  color: tomato;
+  font-weight: bolder;
+  margin: 5px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 50ms ease-in-out;
+}
+.button:hover {
+  background-color: rgba(255, 38, 0, 0.3);
+  color: white;
+}
+.button:active {
+  transform: scale(0.8);
+}
+.button:disabled {
+  color: gray;
+  transform: scale(1);
+  background-color: white;
+}
+
+.results {
+  color: white;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result-name {
+  font-size: 10px;
+}
